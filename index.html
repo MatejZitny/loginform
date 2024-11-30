@@ -5,9 +5,55 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Forms</title>
 </head>
 <body>
+<div class="container">
+    <h1>Registrace</h1>
+a    <h3>Niní si vytvořte účet</h3>
+    <form action="#" method="POST">
+        <label for="fullName">Celé jméno:</label>
+        <input type="text" id="fullName" name="fullName" maxlength="50" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="day">Oblíbený den:</label>
+        <select id="day" name="day" required>
+            <optgroup label="Všední dny">
+                <option value="Pondělí">Pondělí</option>
+                <option value="Úterý">Úterý</option>
+                <option value="Středa">Středa</option>
+                <option value="Čtvrtek">Čtvrtek</option>
+                <option value="Pátek">Pátek</option>
+                <option value="Sobota">Sobota</option>
+                <option value="Neděle">Neděle</option>
+            </optgroup>
+        </select>
+
+        <label for="password">Heslo:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+
+        <label for="confirmPassword">Opakování hesla:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
+
+        <label for="age">Věk:</label>
+        <input type="number" id="age" name="age" min="0" max="120" required>
+
+        <label for="favoriteColor">Oblíbená barva:</label>
+        <input type="color" id="favoriteColor" name="favoriteColor">
+
+        <div class="checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Souhlasím s podmínkami</label>
+        </div>
+
+        <button type="submit">Sign Up</button>
+    </form>
+    <a href="#">Login</a>
+</div>
+
 
 </body>
 </html>
